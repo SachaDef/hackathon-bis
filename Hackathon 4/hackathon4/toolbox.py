@@ -37,6 +37,7 @@ def word_cloud(occurences: Union[List[str], Counter], title: str = None):
     plt.imshow(wc)
     plt.axis("off")
     plt.show()
+    return wc
 
 
 def get_ground_truth(df: pd.DataFrame, X: pd.DataFrame, n=100) -> Dict[str, np.ndarray]:
